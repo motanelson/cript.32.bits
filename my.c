@@ -1,8 +1,7 @@
 int main(){
-    int a = 5;
-    int b = 3;
+    char *a="hello\n";
 
-    prints("hello\n");
+    prints(a);
 
     return 0;
 }
