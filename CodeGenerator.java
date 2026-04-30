@@ -61,11 +61,12 @@ public class CodeGenerator extends cBaseVisitor<String> {
     @Override
     public String visitFunctionDefinition(cParser.FunctionDefinitionContext ctx) {
         String name = ctx.declarator().getText();
-
+        String s="";
         locals.clear();
         stackOffset = 0;
-
-        text.append(name).append(":\n");
+        s=name.replace("(","");
+        s=s.replace(")","");
+        text.append(s).append(":\n");
         text.append("    push ebp\n");
         text.append("    mov ebp, esp\n");
 
