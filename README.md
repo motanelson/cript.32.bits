@@ -1,2 +1,2 @@
-compiles visual basic script compiler
+easy cript 32 bits
 
