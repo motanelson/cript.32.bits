@@ -13,7 +13,7 @@ for ff in f:
    i=int(ff)
    ii=int(g[counter])
    fff=0xff & (i+ii)
-   rr=bytearray([fff,0,0,0])
+   rr=bytearray([0,0,0,fff])
    r=r+rr
    counter=counter+1
    if counter>=len(g):

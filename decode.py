@@ -11,7 +11,7 @@ counter=0
 counter1=0
 g=c.encode()
 for ff in f:
-   if counter1==0:
+   if counter1==3:
        i=int(ff)
        ii=int(g[counter])
        fff=0xff & (i-ii)
